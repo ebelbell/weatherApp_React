@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
+import dotenv from 'dotenv'
 import './App.css'
 
 
 const api = {
-  key: '906a02ced318c571bc872bbb35f588b3',
+  key: process.env.api_Key,
   base: 'https://api.openweathermap.org/data.2.5/',
 };
 
@@ -16,13 +17,12 @@ function App() {
   const [lon, setLon] = useState('');
   const [weather, setWeather] = useState(null);
 
-
-
   // TESTING THE SEARCH BUTTON
   // const searchPressed = () => {
   //   console.log('Search Pressed'); // test the search button returns this text in the console
   //   console.log(search); // print the search term when the user types in a city 
   // };
+
 
   useEffect(() => {
     // fetch weather data
@@ -34,10 +34,10 @@ function App() {
     let url = '';
 
     if (city) {
-      // Search by city name
+      // search by city name
       url = `${api.base}weather?q=${city}&units=metric&appid=${api.key}`;
     } else if (lat && lon) {
-      // Search by latitude and longitude
+      // search by latitude and longitude
       url = `${api.base}weather?lat=${lat}&lon=${lon}&units=metric&appid=${api.key}`;
     } else {
       setError('Search term or Latitude and Longitude are required');
