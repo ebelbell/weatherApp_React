@@ -15,6 +15,7 @@ Useful links:
 
 Project Reqs:
 - This program used the useState hook to manage the state for latitude, longitude, weather data, and error messages.
+- The useEffect hook was used to fetch weather data whenever the search, lat, or lon state variables change
 
 - Endpoints: Weather by City Name: https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API key}
 
