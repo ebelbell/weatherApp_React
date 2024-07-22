@@ -15,3 +15,7 @@ Useful links:
 
 Project Reqs:
 - This program used the useState hook to manage the state for latitude, longitude, weather data, and error messages.
+
+- Endpoints: Weather by City Name: https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API key}
+
+Weather by Latitude and Longitude: https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API key}
