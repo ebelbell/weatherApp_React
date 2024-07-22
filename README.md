@@ -7,3 +7,11 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # weatherApp_React
+
+
+Useful links:
+- API documentation https://openweathermap.org/api
+- API call: https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+Project Reqs:
+- This program used the useState hook to manage the state for latitude, longitude, weather data, and error messages.
